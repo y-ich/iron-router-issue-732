@@ -1,3 +1,3 @@
 if Meteor.isClient
     Template.home.created = ->
-        console.log @data
+        console.log @data, 'should be a cursor instance'

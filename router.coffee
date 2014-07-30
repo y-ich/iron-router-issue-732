@@ -6,7 +6,7 @@ Router.map ->
         layoutTemplate: 'sample'
         template: 'home'
         onBeforeAction: ->
-            @subscribe('sample').wait() # no data
+            @subscribe('sample').wait() # no data in created event
             # @subscribe('sample') # no problem
         data: ->
             cursor: share.Sample.find()
