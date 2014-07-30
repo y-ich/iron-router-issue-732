@@ -1,0 +1,17 @@
+<head>
+  <title>sample</title>
+</head>
+
+<template name="sample">
+    {{> yield}}
+</template>
+
+<template name="home">
+    {{#each cursor}}
+        {{> foo}}
+    {{/each}}
+</template>
+
+<template name="foo">
+    {{number}}
+</template>
